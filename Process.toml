@@ -1,3 +1,4 @@
 [test-repo]
-owner = "folsen"
+owner = "sjeohp"
 matrix_room_id = "!ZXvnxSiXstTeRmkMGk:matrix.parity.io"
+whitelist = []
