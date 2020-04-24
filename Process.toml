@@ -1,9 +1,9 @@
 [test-repo]
 owner = "sjeohp"
-matrix_room_id = "#bot-testing:matrix.parity.io"
+matrix_room_id = "!ZXvnxSiXstTeRmkMGk:matrix.parity.io"
 whitelist = []
 
 [some project]
 owner = "sjeohp"
-matrix_room_id = "#bot-testing:matrix.parity.io"
+matrix_room_id = "!ZXvnxSiXstTeRmkMGk:matrix.parity.io"
 whitelist = []
