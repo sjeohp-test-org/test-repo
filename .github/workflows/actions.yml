@@ -1,14 +1,12 @@
-name: Greet Everyone
-# This workflow is triggered on pushes to the repository.
-on: [push]
-
+on: push
+name: Clippy check
 jobs:
-  build:
-    # Job name is Greeting
-    name: Greeting
-    # This job runs on Linux
+  clippy_check:
     runs-on: ubuntu-latest
     steps:
-        - name: rust-clippy-check
-          uses: actions-rs/clippy-check@v1.0.5
-
+      - uses: actions/checkout@v1
+      - run: rustup component add clippy
+      - uses: actions-rs/clippy-check@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          args: --all-features
