@@ -1,0 +1,11 @@
+image: paritytech/ci-linux:production
+
+stages:
+  - run
+
+say-hello:
+  stage: run
+  when: manual
+  script:
+    - cargo run
+
